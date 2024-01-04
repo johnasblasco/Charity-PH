@@ -1,0 +1,27 @@
+.gradient {
+    background: linear-gradient(to bottom, #f0f8ff, #d7e0f3);
+}
+#terms a, #info a, footer p {
+    color: #535d66;
+    text-decoration: none;
+}
+#terms a:hover, #info a:hover{
+    color: #a5afb8;
+}
+.navbar-brand:hover{
+    color: #00a8e8;
+}
+footer{
+    background-color: #e9f6f5;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    transform: translateY(20px);
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

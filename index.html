@@ -5,22 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB 3.0 | Charity PH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <style>
-        #terms a, #info a, footer p {
-            color: #535d66;
-            text-decoration: none;
-        }
-        #terms a:hover, #info a:hover{
-            color: #a5afb8;
-        }
-        .navbar-brand:hover{
-            color: #00a8e8;
-        }
-        footer{
-            background-color: #F3F8FF;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">   
 </head>
 
 <body>
@@ -30,50 +15,71 @@
             <img src="assets/PH.png" alt="IMAGE HERE" class = "img-fluid" style = "width : 80px; height : 80px">
             <div class="d-flex justify-content-center">
                 <a class="navbar-brand fs-6" href="#">About</a>
-                <a class="navbar-brand fs-6" href="#">Donate</a>
                 <a class="navbar-brand fs-6" href="#">Blog</a>
+                <a class="navbar-brand fs-6" href="#">Contact us</a>
             </div>
             <button class="btn btn-primary">Donate</button>
         </div>
     </nav>
 </header>
 
-<main>
-    <section class="mt-5 pt-5">
+<main class="gradient">
+    <section class="mt-5 pt-5 mb-5 pb-5">
         <div class="container mt-5">
-            <div class="container row">
+            <div class="container row" id="main">
                 <div class="col-md-6">
-                    <h1>The Charity of the Philippines</h1>
-                    <div class="card">
-                    <div class="row g-0">
-                        <div class="col-5 col-sm-4">
-                        <img src="assets/images/bs-images/img-3x4.png" class="img-fluid w-100" alt="card-horizontal-image">
+                    <h1 class="hidden">Project: Charity Philippines Donation Platform</h1>
+                    <!-- FIRST -->
+                    <div class="mt-5 mb-5 pb-5 pt-5">
+                        <div class="card-header hidden">
+                          <h2>Introducing Web 3.0 | Charity PH</h2>
                         </div>
-                        <div class="col-7 col-sm-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                        <div class="card-body hidden">
+                          <p class="card-text fs-4">The Charity Philippines Donation Platform aimed at distributing donations equally among registered charity organizations within the Philippines. </p>
+                          <a href="#" class="btn btn-primary hidden">Donate now</a>
                         </div>
                     </div>
-                    </div>
-
-
-
+                    <!--  -->
 
                 </div>
+                
 
                 <!-- RIGHT -->
                 <div class="col-md-6">
-                   <img src="assets/COTP.png" alt="img" style = "width : 100vh">
+                   <img src="assets/COTP.png" alt="img" style = "width: 100vh" class="img-fluid">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container p-5" id="second">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="hidden mb-5">Goals</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col text-center hidden">
+                <img src="assets/gif/user-friendly.gif" alt="user-friendly" class="img-fluid" style="width: 75px; height: 60px;">
+                <h5>user-friendly interface</h5>
+                <p>Provide a user-friendly interface for donors to make donations.</p>
+            </div>
+            <div class="col text-center hidden">
+                <img src="assets/gif/equality.gif" alt="equally" class="img-fluid" style="width: 75px; height: 60px;">
+                <h5>Equally distribute donate</h5>
+                <p>Equally distribute donated amounts among registered charities.</p>
+            </div>
+            <div class="col text-center hidden">
+                <img src="assets/gif/transparency.gif" alt="transparecy" class="img-fluid" style="width: 75px; height: 60px;">
+                <h5>secure and transparent donation</h5>
+                <p>Ensure secure and transparent donation handling.</p>
             </div>
         </div>
     </section>
 </main>
 
-<footer class="footer text-center m-2 p-5">
+
+<footer class="footer text-center pt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -105,5 +111,6 @@
     </div>
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
